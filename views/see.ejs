@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Art.Design Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="scripts.js"></script>
+  <body>
+<section class="info">
+
+  <h1 class="head">BLOGS SECTION</h1>
+</section>
+<br>
+<ul>
+  <% for(var i=0;i<doc.length;i++) { %>
+
+    <div>
+          <h1><%=doc[i].Title %></h1>
+          <p><%= doc[i].Text %></p>
+          <div onclick="myFunction()"  id="myBtn">READ MORE</div>
+          <div class="date"><%=doc[i].date %></div>
+          <div class="tags">
+            <div class="tag">READ MORE</div>
+          </div>
+        </div>
+
+<% } %>
+</ul>
+
+<div class="">
+  <form class="" action="/tryToAdd" method="post">
+  <button type="submit" >Post One</button>
+  </form>
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+
+
+  </body>
+</html>
